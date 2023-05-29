@@ -1,16 +1,12 @@
+import { EventBoard } from './EventBoard/EventBoard';
+import { PageTitle } from './PageTitle/PageTitle';
+import recipes from 'recipes.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <PageTitle text="Recipes" />
+      <EventBoard events={recipes} />
+    </>
   );
 };
